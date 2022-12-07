@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-12-05T14:11:57-07:00">2022-12-05T14:11:57-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-12-06T18:27:36-07:00">2022-12-06T18:27:36-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>19</b> files in total.
+    <b>20</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>41</b> relevant lines,
-    <span class="green"><b>41</b> lines covered</span> and
+    <b>48</b> relevant lines,
+    <span class="green"><b>48</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -71,11 +71,11 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#01a1b5c15c0220eb234736286ea22c8e3a7a9cee" class="src_link" title="app/controllers/apartments_controller.rb">app/controllers/apartments_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#9afb68aa5f0d68546d268815130b06c8631ad854" class="src_link" title="app/controllers/apartment_tenants_controller.rb">app/controllers/apartment_tenants_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -118,6 +118,17 @@
             <td class="strong t-file__name"><a href="#d16db18a84e68e3fbb8b4daf4b637a0c1ab1f985" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">3</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#0dac924e127c28aec3b97a29f9918cb30a454376" class="src_link" title="app/models/tenant.rb">app/models/tenant.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
             <td class="cell--number">0</td>
@@ -271,9 +282,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#0a92f648d7273c5eeba4d0c0bc7dc1324074d479" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -296,9 +307,9 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="01a1b5c15c0220eb234736286ea22c8e3a7a9cee">
+        <div class="source_table" id="9afb68aa5f0d68546d268815130b06c8631ad854">
   <div class="header">
-    <h3>app/controllers/apartments_controller.rb</h3>
+    <h3>app/controllers/apartment_tenants_controller.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -310,8 +321,8 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -329,7 +340,7 @@
 
             
 
-            <code class="ruby">class ApartmentsController &lt; ApplicationController </code>
+            <code class="ruby">class ApartmentTenantsController &lt; ApplicationController</code>
           </li>
         </div>
       
@@ -351,12 +362,23 @@
 
             
 
-            <code class="ruby">    @apartments = Apartment.all</code>
+            <code class="ruby">    @apartment = Apartment.find(params[:apartment_id])</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @tenants = @apartment.tenants.all </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -367,7 +389,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -602,6 +624,81 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="0dac924e127c28aec3b97a29f9918cb30a454376">
+  <div class="header">
+    <h3>app/models/tenant.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>2</b> relevant lines.
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Tenant &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :apartment</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
@@ -2914,8 +3011,8 @@
     
 
     <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2960,7 +3057,51 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &#39;/apartments/:id&#39;, to: &#39;apartments#show&#39; </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &#39;/tenants&#39;, to: &#39;tenants#index&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &#39;/tenants/:id&#39;, to: &#39;tenants#show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &#39;/apartments/:apartment_id/tenants&#39;, to: &#39;apartment_tenants#index&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
