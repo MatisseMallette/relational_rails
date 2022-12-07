@@ -260,11 +260,11 @@
         "lines": [
           1,
           1,
-          2,
+          0,
           null,
           null,
           1,
-          0,
+          3,
           null,
           null
         ]
@@ -274,8 +274,16 @@
           1,
           null
         ]
+      },
+      "/Users/matissemallette/Desktop/turing_work/2mod/projects/relational_rails/app/models/tenant.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1670417985
+    "timestamp": 1670418480
   }
 }
