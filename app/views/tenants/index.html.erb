@@ -3,6 +3,6 @@
 <p>
     Number of pets: <%=tenant.number_of_pets%><br>
     Has job: <%=tenant.has_job%><br>
-    Place of residence: <%=tenant.apartment.name%>
+    Place of residence: <%= link_to "apartments/tenant.apartment.id",  tenant.apartment.name%>
 </p>
 <%end%>

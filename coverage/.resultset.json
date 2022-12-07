@@ -256,15 +256,23 @@
           null
         ]
       },
+      "/Users/matissemallette/Desktop/turing_work/2mod/projects/relational_rails/app/models/tenant.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/matissemallette/Desktop/turing_work/2mod/projects/relational_rails/app/controllers/apartments_controller.rb": {
         "lines": [
           1,
           1,
-          0,
+          7,
           null,
           null,
           1,
-          3,
+          2,
           null,
           null
         ]
@@ -275,15 +283,30 @@
           null
         ]
       },
-      "/Users/matissemallette/Desktop/turing_work/2mod/projects/relational_rails/app/models/tenant.rb": {
+      "/Users/matissemallette/Desktop/turing_work/2mod/projects/relational_rails/app/controllers/tenants_controller.rb": {
         "lines": [
           1,
           1,
+          7,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/matissemallette/Desktop/turing_work/2mod/projects/relational_rails/app/controllers/apartment_tenants_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1670418480
+    "timestamp": 1670425652
   }
 }

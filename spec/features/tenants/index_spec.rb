@@ -9,7 +9,6 @@ RSpec.describe 'Apartment index' do
 
   it 'displays a list of all apartments' do 
     visit '/tenants'
-    save_and_open_page
     expect(page).to have_content("Bob")
     expect(page).to have_content("1")
     expect(page).to have_content("true")
