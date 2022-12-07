@@ -2,4 +2,6 @@
 <p>
   <%=@apartment.address%><br>
   $<%=@apartment.rent%>
+  Number of tenants: <%=@apartment.tenants.length%>
+  <%= link_to "View this apartment's tenants", "/apartments/#{@apartment.id}/tenants" %>
 </p>

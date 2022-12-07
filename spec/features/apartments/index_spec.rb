@@ -12,4 +12,12 @@ RSpec.describe 'Apartment index' do
     expect(page).to have_content("Sierra Foothills")
     expect(page).to have_content("Blah Blah")
   end
+
+  it 'displays most recent tenants first' do 
+    visit '/apartments'
+    binding.pry
+    save_and_open_page
+    expect(page).to have_content(@apartment1[:created_at])
+    expect(page).to have_content(@apartment2[:create_at])
+  end
 end

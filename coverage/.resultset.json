@@ -264,12 +264,15 @@
           null
         ]
       },
-      "/Users/matissemallette/Desktop/turing_work/2mod/projects/relational_rails/app/controllers/apartment_tenants_controller.rb": {
+      "/Users/matissemallette/Desktop/turing_work/2mod/projects/relational_rails/app/controllers/apartments_controller.rb": {
         "lines": [
           1,
           1,
+          0,
+          null,
+          null,
           1,
-          1,
+          4,
           null,
           null
         ]
@@ -279,8 +282,18 @@
           1,
           null
         ]
+      },
+      "/Users/matissemallette/Desktop/turing_work/2mod/projects/relational_rails/app/controllers/apartment_tenants_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1670376456
+    "timestamp": 1670428034
   }
 }
